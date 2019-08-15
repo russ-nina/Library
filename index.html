@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="src/css/style.css" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="library">Library</h1>
+        <div class="cover_add">
+            <div class="add_book"><p>Add book</p></div>
+        </div>
+        <div class="cover_books"></div>
+    </div>
+<!--Modal-->
+    <div class="modal" id="modal_add_book">
+        <div class="modal_wrapper">
+            <div class="modal_header">
+                <h5 class="modal_title">Add book to library</h5>
+                <span class="modal_close_btn">&times;</span>
+            </div>
+            <div class="modal_body">
+                <form class="modal_form">
+                    <div>
+                        <label for="modal_book_img">Зображення: </label>
+                        <input type="text" name="modalBookImg" id="modal_book_img" value="">
+                    </div>
+                    <div>
+                        <label for="modal_book_name">Назва: </label>
+                        <input type="text" name="modalBookName" id="modal_book_name" value="">
+                    </div>
+                    <div>
+                        <label for="modal_book_author">Автор: </label>
+                        <input type="text" name="modalBookAuthor" id="modal_book_author" value="">
+                    </div>
+                    <div>
+                        <label for="modal_publisher_name">Видавництво: </label>
+                        <input type="text" name="modalPublisherName" id="modal_publisher_name" value="">
+                    </div>
+                    <div>
+                        <label for="modal_publisher_address">Адреса: </label>
+                        <input type="text" name="modalPublisherAddress" id="modal_publisher_address" value="">
+                    </div>
+                    <div>
+                        <label for="modal_publisher_year">Рік: </label>
+                        <input type="text" name="modalPublisherYear" id="modal_publisher_year" value="">
+                    </div>
+                    <div>
+                        <label for="modal_publisher_phone">Телефон: </label>
+                        <input type="text" name="modalPublisherPhone" id="modal_publisher_phone" value="">
+                    </div>
+                    <div>
+                        <label for="modal_book_category">Рубрика: </label>
+                        <input type="text" name="modalBookCategory" id="modal_book_category" value="">
+                    </div>
+                </form>
+            </div>
+            <div class="modal_footer">
+                <div class="modal_cover_buttons">
+                    <span class="modal_close">Close</span>
+                    <span class="modal_add_book">Add book</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Modal Edit-->
+    <div class="modal_edit" id="modal_edit_book">
+        <div class="modal_edit_wrapper">
+            <div class="modal_edit_header">
+                <h5 class="modal_edit_title">Add book to library</h5>
+                <span class="modal_edit_close_btn">&times;</span>
+            </div>
+            <div class="modal_edit_body">
+                <form class="modal_edit_form">
+                    <div>
+                        <label for="modal_edit_img">Зображення: </label>
+                        <input type="text" name="modalBookImg" id="modal_edit_img" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_name">Назва: </label>
+                        <input type="text" name="modalBookName" id="modal_edit_name" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_author">Автор: </label>
+                        <input type="text" name="modalBookAuthor" id="modal_edit_author" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_publisher_name">Видавництво: </label>
+                        <input type="text" name="modalPublisherName" id="modal_edit_publisher_name" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_publisher_address">Адреса: </label>
+                        <input type="text" name="modalPublisherAddress" id="modal_edit_publisher_address" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_publisher_year">Рік: </label>
+                        <input type="text" name="modalPublisherYear" id="modal_edit_publisher_year" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_publisher_phone">Телефон: </label>
+                        <input type="text" name="modalPublisherPhone" id="modal_edit_publisher_phone" value="">
+                    </div>
+                    <div>
+                        <label for="modal_edit_category">Рубрика: </label>
+                        <input type="text" name="modalBookCategory" id="modal_edit_category" value="">
+                    </div>
+                </form>
+            </div>
+            <div class="modal_edit_footer">
+                <div class="modal_edit_cover_buttons">
+                    <span class="modal_edit_close">Close</span>
+                    <span class="modal_edit_book">Edit book</span>
+                </div>
+            </div>
+        </div>
+</div>
+<script src="dist/main.js"></script>
+</body>
+</html>
